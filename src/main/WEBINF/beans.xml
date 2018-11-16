@@ -24,6 +24,6 @@
       http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd" bean-discovery-mode="all">
       
        <alternatives>
-        <class>com.qa.repository.ClassroomRepositoryMap</class>
+        <class>com.qa.persistence.repository.ClassroomRepositoryMap</class>
     </alternatives> 
 </beans>
