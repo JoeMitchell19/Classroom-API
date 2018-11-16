@@ -13,12 +13,20 @@ public class Trainees {
 	@Column
 	private long traineeID;
 	@Column(length = 200)
-	private String trainer;
+	private String trainee;
 	
 	public Trainees() {}
 
 	public long getId() {
 		return id;
+	}
+
+	public String getTrainee() {
+		return trainee;
+	}
+
+	public void setTrainee(String trainee) {
+		this.trainee = trainee;
 	}
 
 	public void setId(long id) {
@@ -32,15 +40,12 @@ public class Trainees {
 	public void setTraineeID(long traineeID) {
 		this.traineeID = traineeID;
 	}
-
-	public String getTrainer() {
-		return trainer;
-	}
-
-	public void setTrainer(String trainer) {
-		this.trainer = trainer;
-	}
 	
+	public void addTrainees(long id, long traineeID, String traineeName) {
+		this.id = id;
+		this.traineeID = traineeID;
+		this.trainee = traineeName;
+	}
 	
 
 }
