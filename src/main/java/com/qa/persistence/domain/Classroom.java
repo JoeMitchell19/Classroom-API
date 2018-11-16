@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+
 @Entity
 public class Classroom {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -51,6 +52,13 @@ public class Classroom {
 		this.trainer = trainer;
 	}
 	
-	
+	public void updateAll(Classroom c) {
+		this.id = c.getId();
+		this.classroomID = c.getClassroomID();
+		this.trainer = c.getTrainer();
+		
+		
+		
+	}
 
 }
